@@ -16,7 +16,7 @@
             height: 100%;
           }
           /* shields iframe from any events happening over it */
-          #background::after {
+          /* #background::after {
             content: "";
             position: absolute;
             top: 0;
@@ -24,7 +24,7 @@
             width: 100%;
             height: 100%;
             opacity: 1;
-          }
+          } */
           #background IFRAME {
             width: 100%;
             height: 100%;
@@ -34,9 +34,69 @@
         </style>
         <!-- background video -->
         <div id='background'>
-            <iframe src='https://www.youtube.com/embed/qREKP9oijWI?autoplay=1&loop=1&showinfo=0&disablekb=0&fs=0' frameborder='0'></iframe>
+            <iframe src='https://www.youtube.com/embed/qREKP9oijWI?autoplay=1&mute=1&loop=1&showinfo=0&disablekb=0&fs=0' frameborder='0'></iframe>
         </div>
 
+        <!-- background audio -->
+
+        <!-- input canvas used -->
+        <script>
+        // window.load = function(){
+        //     let video = null;
+        //     let canvas = null;
+        //     video = document.getElementById('video');
+        //     canvas = document.getElementById('canvas');
+
+        //     navigator.mediaDevices.getUserMedia({video: true, audio: false})
+        //     .then(function(stream) {
+        //       video.srcObject = stream;
+        //       video.play();
+        //     })
+        //     .catch(function(err) {
+        //       console.log("An error occurred: " + err);
+        //     });
+
+        //     video.addEventListener('canplay', function(ev){
+        //       if (!streaming) {
+        //         height = video.videoHeight / (video.videoWidth/width);
+              
+        //         // Firefox currently has a bug where the height can't be read from
+        //         // the video, so we will make assumptions if this happens.
+              
+        //         if (isNaN(height)) {
+        //           height = width / (4/3);
+        //         }
+              
+        //         video.setAttribute('width', width);
+        //         video.setAttribute('height', height);
+        //         canvas.setAttribute('width', width);
+        //         canvas.setAttribute('height', height);
+        //         streaming = true;
+        //       }
+        //     }, false);
+
+        //     startbutton.addEventListener('click', function(ev){
+        //       takepicture();
+        //       ev.preventDefault();
+        //     }, false);
+            
+        //     clearphoto();
+
+        //     function clearphoto() {
+        //       var context = canvas.getContext('2d');
+        //       context.fillStyle = "#AAA";
+        //       context.fillRect(0, 0, canvas.width, canvas.height);
+
+        //       var data = canvas.toDataURL('image/png');
+        //       photo.setAttribute('src', data);
+        //     }  
+        //   }          
+        </script>
+        <div id="inputBox">
+            <video id="video">Video stream not available.</video>
+        </div>
+        <canvas id="canvas">
+        </canvas>
 
         <script>
             /*
