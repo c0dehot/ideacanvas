@@ -1,18 +1,9 @@
-## Moodscape
-A moodscape screen to play with agenda and countdown for events
+## Infoscape
+A interactive tool that allows:
+- people to see each other through webRTC (build over Jitsi)
+- allows interactive co-work on learning tools (jsconsole, etc)
+- will allow students to add notes and "replay" parts of the interactive experience
+- allow students to form discussion groups within the tool.
+- allow full extendibility by adding modules to the code
 
 ## MVP
-For presenters that need to present class agenda and have a presenter screen. For those needing a way to show the progress in the days agenda, as well as a countdown timer till the end of a section for the day.
-
-Keeping in mind this is a “moodscape”, the look of the screen should be relaxing. Actual elements needed are: background video (beach scene etc) or image, audio sound stream, and at least 2 widgets (countdown timer and agenda page).
-
-# Programming Style
-* camelCase with descriptive variables.
-* 3-space indenting
-* brackets `
-if( someCondition ){
-   // branch true
-   
-} else {
-   // branch false
-}`
